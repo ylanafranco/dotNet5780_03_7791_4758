@@ -6,19 +6,18 @@
              xmlns:local="clr-namespace:dotNet5780_03_7791_4758"
              mc:Ignorable="d" 
              d:DesignHeight="200" d:DesignWidth="800" BorderThickness="1">
-    <Grid Name="UserControlGrid">
+    <Grid Name="UserControlGrid" Background="#FFD7D7FA">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBox  Name="tbUnitName" Text="{Binding Path=UnitName}" HorizontalAlignment="Left" Height="45" Margin="25,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
-        <Label Content="Number of Rooms" HorizontalAlignment="Left" Margin="127,99,0,0" VerticalAlignment="Top" Height="27" Width="128" FontSize="14"/>
-        <TextBox Name ="tbRooms" Text="{Binding Path=Rooms}" HorizontalAlignment="Left" Height="41" Margin="48,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40"/>
-        <CheckBox Content="Swimming Pool" Name="isSwimmingPool" IsChecked=
-"{Binding Path=IsSwimingPool}" HorizontalAlignment="Left" Margin="48,148,0,0" VerticalAlignment="Top"/>
+        <TextBox  Name="tbUnitName" Text="{Binding Path=UnitName}" HorizontalAlignment="Left" Height="32" Margin="25,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Number of Rooms" HorizontalAlignment="Left" Margin="25,63,0,0" VerticalAlignment="Top" Height="45" Width="148" FontSize="16" FontStyle="Italic"/>
+        <TextBox Name ="tbRooms" Text="{Binding Path=Rooms}" HorizontalAlignment="Left" Height="23" Margin="178,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29" RenderTransformOrigin="0.816,-0.355"/>
+        <CheckBox Content="Swimming Pool" Name="isSwimmingPool" IsChecked="{Binding Path= isSwimmingPool}" HorizontalAlignment="Left" Margin="48,108,0,0" VerticalAlignment="Top" Height="21" Width="125" FontSize="14"/>
         <Viewbox Name="vbCalendar" Stretch="Fill" Grid.Column="1" HorizontalAlignment="Left" Height="137" Margin="9.667,10,0,0" VerticalAlignment="Top" Width="246"/>
-        <Button Content="Reserved" Name ="btOrder" Grid.Column="1" HorizontalAlignment="Left" Margin="61.667,162,0,0" VerticalAlignment="Top" Width="123" Click="btOrder_Click"/>
+        <Button Content="Reserved" Name ="btOrder" Grid.Column="1" HorizontalAlignment="Left" Margin="64.667,152,0,0" VerticalAlignment="Top" Width="123" Click="btOrder_Click" FontSize="16" FontWeight="Bold"/>
 
 
 

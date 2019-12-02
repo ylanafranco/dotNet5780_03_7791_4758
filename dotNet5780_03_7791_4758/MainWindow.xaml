@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dotNet5780_03_7791_4758"
         mc:Ignorable="d"
-        Title="Take Your Vacation" Height="640" Width="800">
+        Title="Take Your Vacation" Height="640" Width="800" FontWeight="Bold" FontSize="18">
+    <Window.Resources>
+        <Color x:Key="Color1">#FFD7D7FA</Color>
+    </Window.Resources>
     <Grid Name="MainGrid">
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource Color1}"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="40*"/>
             <RowDefinition Height="200*"/>
@@ -15,11 +21,12 @@
         </Grid.RowDefinitions>
         <Grid Name="UpGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" Height="auto" Grid.Row="0" Grid.Column="0">
             <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="356*"/>
+                <ColumnDefinition Width="41*"/>
+                <ColumnDefinition Width="397*"/>
             </Grid.ColumnDefinitions >
-            <ComboBox Name="cbHostList" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="0" SelectionChanged="cbHostList_SelectionChanged" />
-            <TextBox Name="tbHostName" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Text="{Binding Path=HostName}" />
+            <ComboBox Name="cbHostList" HorizontalAlignment="Left" VerticalAlignment="Stretch" Grid.Column="0" SelectionChanged="cbHostList_SelectionChanged" Grid.ColumnSpan="3" Width="397" />
+            <TextBox Name="tbHostName" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="2" Text="{Binding Path=HostName}" Background="#FF7468D9" Margin="0.333,0,-0.666,0" />
         </Grid>
 
     </Grid>

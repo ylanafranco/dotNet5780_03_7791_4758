@@ -34,7 +34,7 @@ namespace dotNet5780_03_7791_4758
                             Rooms = 2,
                             isSwimmingPool = false,
                             AllOrders = new List<DateTime>(),
-                            Uris = new List<string>() { 
+                            Uris = new List<string>() {
                                 "https://cdn.pixabay.com/photo/2017/04/12/19/06/log-home-2225442_1280.jpg",
                                 "https://i.pinimg.com/474x/41/e5/45/41e5451b251bd4b29fe55fac3eef0931.jpg",
                             "https://i.pinimg.com/474x/cf/10/9f/cf109f4ffab7a88cbd4ca9545ffa2b6e.jpg"}
@@ -46,7 +46,7 @@ namespace dotNet5780_03_7791_4758
                             Rooms = 3,
                             isSwimmingPool = true,
                             AllOrders = new List<DateTime>(),
-                            Uris = new List<string>() {"https://i.pinimg.com/564x/73/87/9e/73879e4f35b452f30b9e90ae91c6f5dd.jpg", 
+                            Uris = new List<string>() {"https://i.pinimg.com/564x/73/87/9e/73879e4f35b452f30b9e90ae91c6f5dd.jpg",
                                 "https://i.pinimg.com/474x/3d/5d/14/3d5d14b4a54b81063ef1b037d3232b1c.jpg",
                             "https://i.pinimg.com/474x/c4/84/c7/c484c76706da2f94833bf73eeac6e535.jpg",
                             "https://i.pinimg.com/474x/f3/96/02/f39602b7f45ad15397337b1e34b7c06b.jpg"}

@@ -62,7 +62,7 @@ namespace dotNet5780_03_7791_4758
             bitmap.UriSource = new Uri(@CurrentHostingUnit.Uris[imageIndex]);
             bitmap.EndInit();
             // Set Image.Source
-            dynamicImage.Source = bitmap;    
+            dynamicImage.Source = bitmap;
             // Add Image to Window
             return dynamicImage;
         }
