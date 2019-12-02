@@ -20,16 +20,23 @@ namespace dotNet5780_03_7791_4758
     /// </summary>
     public partial class HostingUnitUserControl : UserControl
     {
-        public HostingUnit CurrentHostingUnit { get; set; }
-        private Calendar MyCalendar;
         private int imageIndex;
         private Viewbox vbImage;
         private Image MyImage;
+        public HostingUnit CurrentHostingUnit;
+        private Calendar MyCalendar;
 
         public HostingUnitUserControl(HostingUnit hostUnit)
         {
             vbImage = new Viewbox();
             InitializeComponent();
+            this.CurrentHostingUnit = hostUnit;
+            UserControlGrid.DataContext = hostUnit;
+            MyCalendar = CreateCalendar();
+            vbCalendar.Child = null;
+            vbCalendar.Child = MyCalendar;
+            SetBlackOutDates();
+
             imageIndex = 0;
             vbImage.Width = 75;
             vbImage.Height = 75;
@@ -45,13 +52,6 @@ namespace dotNet5780_03_7791_4758
             vbImage.MouseUp += vbImage_MouseUp;
             vbImage.MouseEnter += vbImage_MouseEnter;
             vbImage.MouseLeave += vbImage_MouseLeave;
-
-            this.CurrentHostingUnit = hostUnit;
-            UserControlGrid.DataContext = hostUnit;
-            MyCalendar = CreateCalendar();
-            vbCalendar.Child = null;
-            vbCalendar.Child = MyCalendar;
-            SetBlackOutDates();
         }
 
         private Image CreateViewImage()

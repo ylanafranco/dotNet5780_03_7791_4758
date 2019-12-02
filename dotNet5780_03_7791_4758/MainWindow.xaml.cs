@@ -21,7 +21,7 @@ namespace dotNet5780_03_7791_4758
     public partial class MainWindow : Window
     {
         private Host currentHost;
-        List<Host> hostsList = new List<Host>()
+        public List<Host> hostsList = new List<Host>()
             {
                 new Host()
                 {
@@ -123,7 +123,8 @@ namespace dotNet5780_03_7791_4758
                             AllOrders = new List<DateTime>(),
                             Uris = new List<string>() {"https://i.pinimg.com/564x/39/7c/ec/397cec2d404a7c5cade6a7a0dfdf9704.jpg",
                             "https://i.pinimg.com/474x/b4/0f/b3/b40fb30ac7519319d9e13a2c55da7c74.jpg",
-                            "https://i.pinimg.com/474x/29/9e/1f/299e1ff6c902fcd3c85f041abdcd793d.jpg"}
+                            "https://i.pinimg.com/474x/29/9e/1f/299e1ff6c902fcd3c85f041abdcd793d.jpg"
+                            }
                         }
 
                     }

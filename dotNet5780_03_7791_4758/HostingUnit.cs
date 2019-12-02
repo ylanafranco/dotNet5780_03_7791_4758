@@ -14,11 +14,11 @@ namespace dotNet5780_03_7791_4758
         public List<DateTime> AllOrders { get; set; }
         public List<string> Uris { get; set; }
 
-        public HostingUnit()
-        {
-            AllOrders = new List<DateTime>();
-            Uris = new List<string>();
-        }
+        //public HostingUnit()
+        //{
+        //    AllOrders = new List<DateTime>();
+        //    Uris = new List<string>();
+        //}
 
     }
 }
